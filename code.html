@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>code</title>
+  <style>
+    body{
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <pre>
+    CLS
+DIM productName$(10)
+DIM quantity(10) AS INTEGER
+DIM price(10) AS SINGLE
+DIM i AS INTEGER
+DIM totalAmount AS SINGLE
+DIM discountPercent AS SINGLE
+DIM finalAmount AS SINGLE
+
+PRINT "Supermarket Bill"
+PRINT "Enter the number of products: ";
+INPUT i
+FOR j = 1 TO i
+    PRINT "Enter the name of product "; j; ": ";
+    INPUT productName$(j)
+    PRINT "Enter the quantity of "; productName$(j); ": ";
+    INPUT quantity(j)
+    PRINT "Enter the price of "; productName$(j); ": ";
+    INPUT price(j)
+    totalAmount = totalAmount + (quantity(j) * price(j))
+NEXT j
+
+PRINT "Enter the discount percentage: ";
+INPUT discountPercent
+finalAmount = totalAmount - (totalAmount * discountPercent / 100)
+
+PRINT "Total amount: "; totalAmount
+PRINT "Discount applied: "; discountPercent; "%"
+PRINT "Final amount after discount: "; finalAmount
+
+END
+
+  </pre>
+
+</body>
+
+</html>

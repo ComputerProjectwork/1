@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket Bill</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .button {
+      
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+
+    }
+    
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Supermarket Bill Calculator</h1>
+  <div class="container">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" placeholder="Enter product name">
+    
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" placeholder="Enter quantity">
+    
+    <label for="price">Price per Unit:</label>
+    <input type="number" id="price" placeholder="Enter price per unit">
+    
+    <button onclick="addProduct()">Add Product</button>
+    
+    <label for="discount">Discount (%):</label>
+    <input type="number" id="discount" placeholder="Enter discount percentage">
+    
+    <button onclick="calculateTotal()">Calculate Total</button>
+    
+    <div class="result" id="result"></div>
+    <button class="button"><a href="code.html" class="button">See Code in QBASIC</a></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+                                                                       
